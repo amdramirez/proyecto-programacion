@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- CSS FAVICON -->
+    <link rel="icon" href="../assets/img/logo.png">
+	<!-- CSS LOCAL -->
+    <link rel="stylesheet" href="../assets/css/style.css"/> <!-- GENERAL STYLES -->
+    <link rel="stylesheet" href="../assets/css/login.css"/> <!-- LOGIN STYLES -->
+    <link rel="stylesheet" href="../assets/css/icons.css" /> <!-- MATERIAL ICONS -->
+    <title>Login</title>
+</head>
+
+<body class="body-login">
+    <div class="login-container">
+        <div class="login">
+            <div class="login-logo">
+                <img src="../assets/img/logo.png" alt="logo">
+            </div>
+            <div class="login-header">
+                <h1>Inicio de sesion</h1>
+                <div>Por favor iniciar sesion para poder usar la plataforma</div>
+            </div>
+            <form class="login-form">
+                <div class="form-item">
+					<!-- Las clases que incluyen 'material' son para los iconos -->
+                    <span class="form-item-icon material-symbols-rounded">mail</span>
+                    <input type="email" placeholder="Correo"  id="email" name="email" 
+                    autofocus required>
+                </div>
+                <div class="form-item">
+                    <span class="form-item-icon material-symbols-rounded">lock</span>
+                    <input type="password" placeholder="Contraseña" id="password" name="password"
+                     required>
+                </div>
+                <button type="submit">Iniciar sesion</button>
+            </form>
+            <div class="login-footer">
+                No tienes una cuenta?<a href="#"> Crea una gratis</a>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,22 @@
+/* GENERAL STYLES */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+a, button {
+    cursor: revert;
+}
+
+a {
+    text-decoration: none;
+}
+
+ol, ul, menu {
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+}
