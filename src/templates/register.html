@@ -11,10 +11,10 @@
     <link rel="stylesheet" href="../assets/css/style.css"/> <!-- GENERAL STYLES -->
     <link rel="stylesheet" href="../assets/css/login.css"/> <!-- LOGIN STYLES -->
     <link rel="stylesheet" href="../assets/css/icons.css" /> <!-- MATERIAL ICONS -->
-    <title>SOLO CIENCIA | LOGIN</title>
+    <title>SOLO CIENCIA | REGISTRATE</title>
 </head>
 
-<body>
+<body class="body-login">
     <header class="header">
         <div class="logo">
             <img src="../assets/img/logo.png" alt="Logo">
@@ -22,36 +22,42 @@
         <nav>
            <ul class="nav-links">
                 <li><a href="#">ACERCA DE NOSOTROS</a></li>
-                <li><a class="btn" href="#"><button>INICIA SESION</button></a></li>
-                <li><a class="btn" href="../templates/register.html"><button>REGISTRATE</button></a></li>
+                <li><a class="btn" href="../templates/login.html"><button>INICIA SESION</button></a></li>
+                <li><a class="btn" href="#"><button>REGISTRATE</button></a></li>
            </ul>            
         </nav>
     </header>
     <div class="login-container">
-        <div class="login">
+        <div class="login" style="width: 700px !important;">
             <div class="login-logo">
                 <img src="../assets/img/logo.png" alt="logo">
             </div>
             <div class="login-header">
-                <h1>Inicio de sesion</h1>
-                <div>Por favor iniciar sesion para poder usar la plataforma</div>
+                <h1>Crea una cuenta</h1>
+                <div>Por favor crear una cuenta para poder usar la plataforma</div>
             </div>
             <form class="login-form">
+				<!-- Las clases que incluyen 'material' son para los iconos -->
                 <div class="form-item">
-					<!-- Las clases que incluyen 'material' son para los iconos -->
+                    <span class="form-item-icon material-symbols-rounded">person</span>
+                    <input type="text" placeholder="Nombre completo"  id="name" name="name" autofocus required>
+                </div>
+                <div class="form-item">
+                    <span class="form-item-icon material-symbols-rounded">mood</span>
+                    <input type="number" placeholder="Edad"  id="age" name="age" min="14" required>
+                </div>
+                <div class="form-item">
                     <span class="form-item-icon material-symbols-rounded">mail</span>
-                    <input type="email" placeholder="Correo"  id="email" name="email" 
-                    autofocus required>
+                    <input type="email" placeholder="Correo"  id="email" name="email" required>
                 </div>
                 <div class="form-item">
                     <span class="form-item-icon material-symbols-rounded">lock</span>
-                    <input type="password" placeholder="Contraseña" id="password" name="password"
-                     required>
+                    <input type="password" placeholder="Contraseña" id="password" name="password" required>
                 </div>
-                <button type="submit">Iniciar sesion</button>
+                <button type="submit">Crear cuenta</button>
             </form>
             <div class="login-footer">
-                No tienes una cuenta?<a href="../templates/register.html"> Crea una gratis</a>
+                Ya tienes una cuenta?<a href="../templates/login.html"> Inicia sesion</a>
             </div>
         </div>
     </div>

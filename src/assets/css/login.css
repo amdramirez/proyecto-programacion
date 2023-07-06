@@ -2,8 +2,8 @@
 
 /* BODY LOGIN */
 
-body.body-login{
-    font-family: 'Poppins', sans-serif;
+.login-container{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     min-height: 100vh;
     background: linear-gradient(to right, #333399, #3da746);
     display: flex;
@@ -18,6 +18,7 @@ body.body-login{
     padding: 4rem;
     border-radius: 10px;
     position: relative;
+    z-index: 0;
 }
 
 .login::before {
@@ -25,7 +26,7 @@ body.body-login{
     position: absolute;
     inset: 0;
     background: rgba(255, 255, 255, 0.08);
-    transform: rotate(-45deg);
+    transform: rotate(45deg);
     border-radius: 10px;
     z-index: -1;
 }
@@ -36,7 +37,7 @@ body.body-login{
 }
 
 .login-logo img {
-    width: 60px;
+    width: 100px;
 }
 
 .login-logo,
@@ -87,6 +88,8 @@ body.body-login{
 }
 
 /* Login Form Elements */
+.login input[type="text"],
+.login input[type="number"],
 .login input[type="password"],
 .login input[type="email"] {
     border: none;
