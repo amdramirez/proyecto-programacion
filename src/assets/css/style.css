@@ -1,6 +1,6 @@
 /* GENERAL STYLES */
 
-body{
+body {
     font-family: 'Poppins', sans-serif;
     margin: 0;
 }
@@ -11,7 +11,8 @@ body{
     box-sizing: border-box;
 }
 
-a, button {
+a,
+button {
     cursor: revert;
 }
 
@@ -19,7 +20,9 @@ a {
     text-decoration: none;
 }
 
-ol, ul, menu {
+ol,
+ul,
+menu {
     list-style: none;
 }
 
@@ -27,56 +30,81 @@ img {
     max-width: 100%;
 }
 
-.header{
-    background-color: rgba(0, 0, 0);
-    position: relative;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 85px;
-    padding: 5px 10%;
+/* NAVBAR */
+
+.toggle,
+[id^=drop] {
+    display: none;
 }
 
-.header .logo{
-    cursor: pointer;
+nav {
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to right, #333399, #3da746);
+    backdrop-filter: blur(20px);
 }
 
-.header .logo img{
-    height: 70px;
-    width: auto;
-    transition: all 0.3s;
+.logo img {
+    display: block;
+    float: left;
+    margin: 10px;
+    width: 80px;
 }
 
-.header .nav-links{
+nav:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+nav ul {
+    float: right;
+    padding: 0;
+    margin: 0;
     list-style: none;
+    position: relative;
 }
 
-.header .nav-links li{
+nav ul li {
+    margin: 0px;
     display: inline-block;
-    padding: 0 20px;    
+    float: left;
+    /* background-color: ; */
 }
 
-.header .nav-links a{
-    font-size: 700;
-    color: #eceff1;
-    text-decoration: none;    
+nav a {
+    display: block;
+    padding: 14px 20px;
+    color: #FFF;
+    font-size: 17px;
 }
 
-.header .nav-links li a:hover{
-    color: #333399;
+.sub{
+    background-color: rgb(0, 0, 0, .6);
 }
 
-.header .btn button{
-    font-weight: 700;
-    color: #1b3039;
-    padding: 9px 25px;
-    background: #eceff1;
-    border: none;
-    border-radius: 50px;
-    cursor: pointer;
-    transition: all 0.3s ease 0s;
+nav ul li ul li:hover {
+    backdrop-filter: blur(100px);
 }
 
-.header .btn button:hover{
-    color: #3da746;
+nav a:hover {
+    backdrop-filter: blur(100px);
+    background-color: rgb(0, 0, 0, .6);
+}
+
+nav ul ul {
+    display: none;
+    position: absolute;
+    top: 50px;
+}
+
+nav ul li:hover>ul {
+    display: inherit;
+}
+
+nav ul ul li {
+    width: 170px;
+    float: none;
+    display: list-item;
+    position: relative;
 }

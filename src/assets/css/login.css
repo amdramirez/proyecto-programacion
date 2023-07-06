@@ -2,7 +2,7 @@
 
 /* BODY LOGIN */
 
-.login-container{
+.login-container {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     min-height: 100vh;
     background: linear-gradient(to right, #333399, #3da746);
@@ -53,6 +53,7 @@
 .login a:hover {
     color: #3da746;
 }
+
 /* LOGIN HEADER */
 .login-header {
     margin-bottom: 2rem;
@@ -68,6 +69,7 @@
     font-size: calc(1rem * .8);
     opacity: .8;
 }
+
 /* LOGIN FORM*/
 .login-form {
     display: flex;
