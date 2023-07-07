@@ -197,7 +197,7 @@ nav ul ul li {
 	align-items: flex-end;
 	justify-content: space-between;
 	padding: 24px;
-	color: #f4c644;
+	color: #333399;
 }
 .notice__source {
 	color: #fff;
@@ -207,11 +207,11 @@ nav ul ul li {
 	text-decoration: none;
 	padding: 10px 15px;
 	border-radius: 4px;
-	background-color: #f4c644;
+	background-color: #3da746;
 	color: #000;
 	transition: background-color 250ms;
 }
 .notice__button:hover{
-	background-color: #d9ad34;
+	background-color: #3da746;
 }
   
