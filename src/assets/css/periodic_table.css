@@ -1,0 +1,294 @@
+.type-1 {
+    background: rgb(255, 224, 141);
+}
+
+.type-2 {
+    background: #ecff8b;
+}
+
+.type-3 {
+    background: #b6ff8a;
+}
+
+
+.periodic {
+    padding: 50px;
+    position: relative;
+    height: 200px;
+    margin-right: -1px;
+    text-shadow: none;
+}
+
+.periodic-row {
+    clear: both;
+    height: 10%;
+}
+
+.cell {
+    float: left;
+    position: relative;
+    width: 5.55%;
+    height: 100%;
+}
+
+
+.element {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 1px;
+    right: 1px;
+    box-sizing: border-box;
+    box-shadow: 0px 0px 4px rgba(255, 255, 255, 0.5);
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    text-align: center;
+    cursor: default;
+    pointer-events: none;
+    -webkit-transition: all 200ms ease;
+    transition: all 200ms ease;
+    background-color: rgba(0, 128, 128, 0.6);
+}
+
+.cell:hover .element {
+    border-color: rgba(0, 0, 0, 0.1);
+    z-index: 1;
+    background-color: rgba(0, 128, 128, 0.9);
+}
+
+
+.symbol {
+    position: absolute;
+    top: 50%;
+    left: 0px;
+    right: 0px;
+    margin-top: -4px;
+    font-size: 9px;
+    line-height: 1;
+    height: 9px;
+    color: #000;
+}
+
+.cell:nth-child(-n+2) .element {
+    background-color: rgb(255, 224, 141);
+}
+
+.cell:nth-child(-n+2):hover .element,
+{
+background-color: rgb(255, 224, 141);
+}
+
+.periodic-row:nth-child(-n+6) .cell:nth-child(18) .element {
+    background-color: #8edeff;
+}
+
+.periodic-row:nth-child(-n+6) .cell:nth-child(18):hover .element {
+    background-color: #8edeff;
+}
+
+.periodic-row:nth-child(n+2) .cell:nth-child(1) .element {
+    background-color: #ffc78e;
+    ;
+}
+
+.periodic-row:nth-child(n+2) .cell:nth-child(1):hover .element {
+    background-color: #ffc78e;
+    ;
+}
+
+.periodic-row:nth-child(1) .cell:nth-child(1) .element {
+    background-color: #ab8fff;
+}
+
+.periodic-row:nth-child(1) .cell:nth-child(1):hover .element {
+    background-color: #ab8fff;
+}
+
+.periodic-row:nth-child(-n+7) .cell:nth-child(3) .element,
+.periodic-row:nth-child(-n+7) .cell:nth-child(4) .element,
+.periodic-row:nth-child(-n+7) .cell:nth-child(5) .element,
+.periodic-row:nth-child(-n+7) .cell:nth-child(6) .element,
+.periodic-row:nth-child(-n+7) .cell:nth-child(7) .element,
+.periodic-row:nth-child(-n+7) .cell:nth-child(8) .element,
+.periodic-row:nth-child(-n+7) .cell:nth-child(9) .element,
+.periodic-row:nth-child(-n+7) .cell:nth-child(10) .element,
+.periodic-row:nth-child(-n+7) .cell:nth-child(11) .element,
+.periodic-row:nth-child(-n+7) .cell:nth-child(12) .element {
+    background-color: #ecff8b;
+    ;
+}
+
+.periodic-row:nth-child(-n+7) .cell:nth-child(3):hover .element,
+.periodic-row:nth-child(-n+7) .cell:nth-child(4):hover .element,
+.periodic-row:nth-child(-n+7) .cell:nth-child(5):hover .element,
+.periodic-row:nth-child(-n+7) .cell:nth-child(6):hover .element,
+.periodic-row:nth-child(-n+7) .cell:nth-child(7):hover .element,
+.periodic-row:nth-child(-n+7) .cell:nth-child(8):hover .element,
+.periodic-row:nth-child(-n+7) .cell:nth-child(9):hover .element,
+.periodic-row:nth-child(-n+7) .cell:nth-child(10):hover .element,
+.periodic-row:nth-child(-n+7) .cell:nth-child(11):hover .element,
+.periodic-row:nth-child(-n+7) .cell:nth-child(12):hover .element {
+    background-color: #ecff8b;
+    ;
+}
+
+.periodic-row:nth-child(2) .cell:nth-child(13) .element,
+.periodic-row:nth-child(3) .cell:nth-child(14) .element,
+.periodic-row:nth-child(4) .cell:nth-child(14) .element,
+.periodic-row:nth-child(4) .cell:nth-child(15) .element,
+.periodic-row:nth-child(5) .cell:nth-child(15) .element,
+.periodic-row:nth-child(5) .cell:nth-child(16) .element,
+.periodic-row:nth-child(6) .cell:nth-child(16) .element {
+    background-color: #8fff9b;
+}
+
+.periodic-row:nth-child(2) .cell:nth-child(13):hover .element,
+.periodic-row:nth-child(3) .cell:nth-child(14):hover .element,
+.periodic-row:nth-child(4) .cell:nth-child(14):hover .element,
+.periodic-row:nth-child(4) .cell:nth-child(15):hover .element,
+.periodic-row:nth-child(5) .cell:nth-child(15):hover .element,
+.periodic-row:nth-child(5) .cell:nth-child(16):hover .element,
+.periodic-row:nth-child(6) .cell:nth-child(16):hover .element {
+    background-color: #8fff9b;
+}
+
+.periodic-row:nth-child(2) .cell:nth-child(14) .element,
+.periodic-row:nth-child(2) .cell:nth-child(15) .element,
+.periodic-row:nth-child(3) .cell:nth-child(15) .element,
+.periodic-row:nth-child(2) .cell:nth-child(16) .element,
+.periodic-row:nth-child(3) .cell:nth-child(16) .element,
+.periodic-row:nth-child(4) .cell:nth-child(16) .element {
+    background-color: #ab8fff;
+}
+
+.periodic-row:nth-child(2) .cell:nth-child(14):hover .element,
+.periodic-row:nth-child(2) .cell:nth-child(15):hover .element,
+.periodic-row:nth-child(3) .cell:nth-child(15):hover .element,
+.periodic-row:nth-child(2) .cell:nth-child(16):hover .element,
+.periodic-row:nth-child(3) .cell:nth-child(16):hover .element,
+.periodic-row:nth-child(4) .cell:nth-child(16):hover .element {
+    background-color: #ab8fff;
+}
+
+.periodic-row:nth-child(-n+6) .cell:nth-child(17) .element {
+    background-color: #fb8dff;
+}
+
+.periodic-row:nth-child(3) .cell:nth-child(13) .element,
+.periodic-row:nth-child(4) .cell:nth-child(13) .element,
+.periodic-row:nth-child(5) .cell:nth-child(13) .element,
+.periodic-row:nth-child(6) .cell:nth-child(13) .element,
+.periodic-row:nth-child(5) .cell:nth-child(14) .element,
+.periodic-row:nth-child(6) .cell:nth-child(14) .element,
+.periodic-row:nth-child(6) .cell:nth-child(15) .element {
+    background-color: #fffa8a;
+}
+
+.periodic-row:nth-child(3) .cell:nth-child(13):hover .element,
+.periodic-row:nth-child(4) .cell:nth-child(13):hover .element,
+.periodic-row:nth-child(5) .cell:nth-child(13):hover .element,
+.periodic-row:nth-child(6) .cell:nth-child(13):hover .element,
+.periodic-row:nth-child(5) .cell:nth-child(14):hover .element,
+.periodic-row:nth-child(6) .cell:nth-child(14):hover .element,
+.periodic-row:nth-child(6) .cell:nth-child(15):hover .element {
+    background-color: #fffa8a;
+}
+
+.periodic-row:nth-child(7) .cell:nth-child(13) .element,
+.periodic-row:nth-child(7) .cell:nth-child(14) .element,
+.periodic-row:nth-child(7) .cell:nth-child(15) .element,
+.periodic-row:nth-child(7) .cell:nth-child(16) .element,
+.periodic-row:nth-child(7) .cell:nth-child(17) .element,
+.periodic-row:nth-child(7) .cell:nth-child(18) .element {
+    background-color: #c8c8c8;
+}
+
+.periodic-row:nth-child(7) .cell:nth-child(13):hover .element,
+.periodic-row:nth-child(7) .cell:nth-child(14):hover .element,
+.periodic-row:nth-child(7) .cell:nth-child(15):hover .element,
+.periodic-row:nth-child(7) .cell:nth-child(16):hover .element,
+.periodic-row:nth-child(7) .cell:nth-child(17):hover .element,
+.periodic-row:nth-child(7) .cell:nth-child(18):hover .element {
+    background-color: #c8c8c8;
+}
+
+.periodic-row:nth-child(9) .cell:nth-child(4) .element,
+.periodic-row:nth-child(9) .cell:nth-child(5) .element,
+.periodic-row:nth-child(9) .cell:nth-child(6) .element,
+.periodic-row:nth-child(9) .cell:nth-child(7) .element,
+.periodic-row:nth-child(9) .cell:nth-child(8) .element,
+.periodic-row:nth-child(9) .cell:nth-child(9) .element,
+.periodic-row:nth-child(9) .cell:nth-child(10) .element,
+.periodic-row:nth-child(9) .cell:nth-child(11) .element,
+.periodic-row:nth-child(9) .cell:nth-child(12) .element,
+.periodic-row:nth-child(9) .cell:nth-child(13) .element,
+.periodic-row:nth-child(9) .cell:nth-child(14) .element,
+.periodic-row:nth-child(9) .cell:nth-child(15) .element,
+.periodic-row:nth-child(9) .cell:nth-child(16) .element,
+.periodic-row:nth-child(9) .cell:nth-child(17) .element,
+.periodic-row:nth-child(9) .cell:nth-child(18) .element {
+    background-color: #d0ff8b;
+}
+
+.periodic-row:nth-child(9) .cell:nth-child(4):hover .element,
+.periodic-row:nth-child(9) .cell:nth-child(5):hover .element,
+.periodic-row:nth-child(9) .cell:nth-child(6):hover .element,
+.periodic-row:nth-child(9) .cell:nth-child(7):hover .element,
+.periodic-row:nth-child(9) .cell:nth-child(8):hover .element,
+.periodic-row:nth-child(9) .cell:nth-child(9):hover .element,
+.periodic-row:nth-child(9) .cell:nth-child(10):hover .element,
+.periodic-row:nth-child(9) .cell:nth-child(11):hover .element,
+.periodic-row:nth-child(9) .cell:nth-child(12):hover .element,
+.periodic-row:nth-child(9) .cell:nth-child(13):hover .element,
+.periodic-row:nth-child(9) .cell:nth-child(14):hover .element,
+.periodic-row:nth-child(9) .cell:nth-child(15):hover .element,
+.periodic-row:nth-child(9) .cell:nth-child(16):hover .element,
+.periodic-row:nth-child(9) .cell:nth-child(17):hover .element,
+.periodic-row:nth-child(9) .cell:nth-child(18):hover .element {
+    background-color: #d0ff8b;
+}
+
+.periodic-row:nth-child(10) .cell:nth-child(4) .element,
+.periodic-row:nth-child(10) .cell:nth-child(5) .element,
+.periodic-row:nth-child(10) .cell:nth-child(6) .element,
+.periodic-row:nth-child(10) .cell:nth-child(7) .element,
+.periodic-row:nth-child(10) .cell:nth-child(8) .element,
+.periodic-row:nth-child(10) .cell:nth-child(9) .element,
+.periodic-row:nth-child(10) .cell:nth-child(10) .element,
+.periodic-row:nth-child(10) .cell:nth-child(11) .element,
+.periodic-row:nth-child(10) .cell:nth-child(12) .element,
+.periodic-row:nth-child(10) .cell:nth-child(13) .element,
+.periodic-row:nth-child(10) .cell:nth-child(14) .element,
+.periodic-row:nth-child(10) .cell:nth-child(15) .element,
+.periodic-row:nth-child(10) .cell:nth-child(16) .element,
+.periodic-row:nth-child(10) .cell:nth-child(17) .element,
+.periodic-row:nth-child(10) .cell:nth-child(18) .element {
+    background-color: #b6ff8a;
+}
+
+.periodic-row:nth-child(10) .cell:nth-child(4):hover .element,
+.periodic-row:nth-child(10) .cell:nth-child(5):hover .element,
+.periodic-row:nth-child(10) .cell:nth-child(6):hover .element,
+.periodic-row:nth-child(10) .cell:nth-child(7):hover .element,
+.periodic-row:nth-child(10) .cell:nth-child(8):hover .element,
+.periodic-row:nth-child(10) .cell:nth-child(9):hover .element,
+.periodic-row:nth-child(10) .cell:nth-child(10):hover .element,
+.periodic-row:nth-child(10) .cell:nth-child(11):hover .element,
+.periodic-row:nth-child(10) .cell:nth-child(12):hover .element,
+.periodic-row:nth-child(10) .cell:nth-child(13):hover .element,
+.periodic-row:nth-child(10) .cell:nth-child(14):hover .element,
+.periodic-row:nth-child(10) .cell:nth-child(15):hover .element,
+.periodic-row:nth-child(10) .cell:nth-child(16):hover .element,
+.periodic-row:nth-child(10) .cell:nth-child(17):hover .element,
+.periodic-row:nth-child(10) .cell:nth-child(18):hover .element {
+    background-color: #b6ff8a;
+}
+
+@media (min-width: 1200px) {
+    .periodic {
+        height: 800px;
+    }
+
+    .symbol {
+        font-size: 30px;
+    }
+}
