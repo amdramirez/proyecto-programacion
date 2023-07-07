@@ -1,0 +1,94 @@
+@import url('../css/fonts.css');
+
+/* BODY LOGIN */
+
+.course-register-container {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    min-height: 100vh;
+    background: linear-gradient(to right, #333399, #3da746);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* LOGIN */
+.course-register {
+    width: 500px;
+    background: rgba(255, 255, 255, .5);
+    padding: 4rem;
+    border-radius: 10px;
+    position: relative;
+    z-index: 0;
+}
+
+.course-register-header{
+    text-align: center;
+}
+
+/* LOGIN HEADER */
+.course-register-header {
+    margin-bottom: 2rem;
+}
+
+.course-register-header h1 {
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: .5rem;
+}
+
+.course-register-header h1+div {
+    font-size: calc(1rem * .8);
+    opacity: .8;
+}
+
+/* LOGIN FORM*/
+.course-register-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.course-register-form .form-item {
+    position: relative;
+}
+
+.course-register-form .form-item .form-item-icon {
+    position: absolute;
+    top: .82rem;
+    left: 1.4rem;
+    font-size: 1.3rem;
+    opacity: .4;
+}
+
+/* Login Form Elements */
+.course-register select,
+.course-register input {
+    border: none;
+    outline: none;
+    background: rgba(255, 255, 255, .3);
+    padding: 1rem 1.5rem;
+    padding-left: calc(1rem * 3.5);
+    border-radius: 100px;
+    width: 100%;
+    transition: background .5s;
+}
+
+.course-register input:focus {
+    background: white;
+}
+
+.course-register button {
+    background: black;
+    color: white;
+    padding: 1rem;
+    border-radius: 100px;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: background .5s;
+}
+
+.course-register button:hover {
+    background-color: rgba(0, 0, 0, 0.75);
+    cursor: pointer;
+}

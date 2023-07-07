@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS FAVICON -->
+    <link rel="icon" href="../assets/img/logo.png">
+    <!-- CSS LOCAL -->
+    <link rel="stylesheet" href="../assets/css/style.css" /> <!-- GENERAL STYLES -->
+    <link rel="stylesheet" href="../assets/css/course_register.css" /> <!-- COURSE REGISTER STYLES -->
+    <link rel="stylesheet" href="../assets/css/icons.css" /> <!-- MATERIAL ICONS -->
+    <title>SOLO CIENCIA | REGISTRO DE CURSO</title>
+</head>
+
+<body>
+    <header>
+        <!-- NAVBAR -->
+        <nav>
+            <div class="logo">
+                <img src="../assets/img/logo.png" alt="Logo">
+            </div>
+            <input type="checkbox" id="drop" />
+            <ul class="menu">
+                <li><a href="../templates/home.html">Inicio</a></li>
+                <li>
+                    <a href="#">Cursos</a>
+                    <input type="checkbox" id="drop-1" />
+                    <ul>
+                        <li class="sub"><a href="../templates/course_register.html?course=ciencias_naturales">Ciencias Naturales</a></li>
+                        <li class="sub"><a href="../templates/course_register.html?course=quimica_y_biología">Química y Biología</a></li>
+                        <li class="sub"><a href="../templates/course_register.html?course=programacion">Programacion</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Referencias</a></li>
+                <li><a href="#">Contactanos</a></li>
+                <li><a href="../templates/login.html">Cerrar sesion</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Home -->
+    <div class="back"></div>
+    <div class="center">
+        <div class="title">
+            <h1>Solo<span>Ciencia</span></h1>
+        </div>
+        <div class="sub_title">Desata tu curiosidad</div>
+    </div>
+
+    <!-- Course Form Register -->
+    <div class="course-register-container">
+        <div class="course-register" style="width: 700px !important;">
+            <div class="course-register-header">
+                <h1 id="course-name">Registrate en el curso de: </h1>
+                <div>Por favor llena el siguiente formulario</div>
+            </div>
+            <form class="course-register-form">
+				<!-- Las clases que incluyen 'material' son para los iconos -->
+                <div class="form-item">
+                    <span class="form-item-icon material-symbols-rounded">person</span>
+                    <input type="text" placeholder="Nombre completo"  id="name" name="name" autofocus required>
+                </div>
+                <div class="form-item">
+                    <span class="form-item-icon material-symbols-rounded">badge</span>
+                    <input type="text" placeholder="Cedula"  id="card_id" name="card_id" required>
+                </div>
+                <div class="form-item">
+                    <span class="form-item-icon material-symbols-rounded">mail</span>
+                    <select name="date_init" id="date_init">
+                        <option disabled selected>Selecciona una fecha de inicio</option>
+                        <option value="20-07">20 de julio</option>
+                        <option value="24-10">24 de octubre</option>
+                        <option value="14-11">14 de noviembre</option>
+                    </select>
+                </div>
+                <div class="form-item">
+                    <input type="text" id="course" name="course" hidden>
+                </div>
+                <button type="submit">Registrarme</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="../assets/js/course_register.js"></script>
+</body>
+
+</html>

@@ -214,4 +214,15 @@ nav ul ul li {
 .notice__button:hover{
 	background-color: #3da746;
 }
-  
+
+@media screen and (max-width: 1280px) {
+
+    .card {
+        position: relative;
+        isolation: isolate;
+        width: 400px;
+        height: 200px;
+        background-color: #000;
+        border-radius: 8px;
+    }
+}
