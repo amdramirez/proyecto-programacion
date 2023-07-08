@@ -5,7 +5,7 @@
 .course-register-container {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     min-height: 100vh;
-    background: linear-gradient(to right, #333399, #3da746);
+    background: #caffd7;
     display: flex;
     justify-content: center;
     align-items: center;
