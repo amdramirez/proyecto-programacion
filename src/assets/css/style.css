@@ -276,6 +276,20 @@ nav ul ul li {
     color: #000;
 }
 
+
+
+/* SOCIAL MEDIA */
+
+.social a img{
+    width: 50px;
+    margin-bottom: 20px;
+}
+
+.social a img:hover{
+    opacity: 0.5;
+}
+
+
 @media screen and (max-width: 1280px) {
 
     .card {
