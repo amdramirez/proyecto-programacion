@@ -38,6 +38,20 @@ img, iframe, video {
 	justify-content: center;
 }
 
+.section-title span {
+	color: #333399;
+}
+
+.section-title {
+	font-size: 3rem;
+	font-weight: 300;
+	color: black;
+	margin-bottom: 10px;
+	text-transform: uppercase;
+	letter-spacing: 0.2rem;
+	text-align: center;
+}
+
 /* NAVBAR */
 
 .toggle,
