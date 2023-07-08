@@ -130,3 +130,21 @@
     margin-top: 1.5rem;
     font-size: calc(1rem * .8);
 }
+
+/* Responsive */
+@media screen and (max-width: 1280px) {
+
+    .login {
+        width: 500px;
+        background: rgba(255, 255, 255, .5);
+        padding: 4rem;
+        margin-top: 10rem;
+        margin-bottom: 10rem;
+        border-radius: 10px;
+        position: relative;
+        z-index: 0;
+    }
+
+}
+/* ---------- */
+

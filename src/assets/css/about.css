@@ -1,3 +1,7 @@
+#about {
+	margin-top: 10rem;
+}
+
 #about .about {
 	display: flex;
 	text-align: center;
