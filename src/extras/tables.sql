@@ -1,0 +1,17 @@
+CREATE TABLE users (
+  id INT AUTO_INCREMENT PRIMARY KEY NOT NULL,
+  name VARCHAR(256) NOT NULL,
+  age TINYINT NOT NULL,
+  email VARCHAR(256) UNIQUE NOT NULL,
+  password VARCHAR(64) NOT NULL
+);
+
+
+CREATE TABLE course_registration (
+  id INT AUTO_INCREMENT PRIMARY KEY NOT NULL,
+  course VARCHAR(32) NOT NULL,
+  name VARCHAR(256) NOT NULL,
+  card_id VARCHAR(32) NOT NULL,
+  date_init VARCHAR(32) NOT NULL,
+  UNIQUE KEY unique_registration (name, card_id, course)
+);
