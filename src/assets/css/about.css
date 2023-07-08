@@ -1,9 +1,8 @@
 #about .about {
 	display: flex;
 	text-align: center;
-	max-width: 1200px;
+	max-width: 1000px;
 	margin: 0 auto;
-	padding: 100px 20px;
 }
 .col{
 	padding: 15px;
